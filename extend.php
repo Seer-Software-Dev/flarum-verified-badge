@@ -10,7 +10,7 @@ return [
         ->content(function (Document $document) {
             $document->head[] = '
             <script>
-                document.onload = function() {
+                window.addEventListener("load", function(){
                     const vBadges = document.querySelector(".verifiedBadge");
 
                     console.log(vBadges)
@@ -20,7 +20,7 @@ return [
                             parentBadge.classList.add("verifiedBadgeParent");
                         }
                     }
-                }
+                });
             </script>
 
             <style>
