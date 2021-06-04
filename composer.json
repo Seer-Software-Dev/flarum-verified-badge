@@ -1,0 +1,37 @@
+{
+    "name": "serakoi/flarum-verified-badge",
+    "description": "Get a verified badge on your flarum website!",
+    "keywords": [
+      "flarum",
+      "theme"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [{
+      "name": "Seer",
+      "email": "admin@seer-software.com",
+      "homepage": "https://github.com/Seer-Software-Dev"
+    }],
+    "support": {
+      "issues": "https://github.com/Seer-Software-Dev/flarum-verified-badge/issues",
+      "source": "https://github.com/Seer-Software-Dev/flarum-verified-badge"
+    },
+    "require": {
+      "flarum/core": "^1.0.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "serakoi\\flarum-verified-badge\\": "src/"
+      }
+    },
+    "extra": {
+      "flarum-extension": {
+        "title": "Verified Badge",
+        "icon": {
+          "name": "fas fa-check-circle",
+          "backgroundColor": "#46c293",
+          "color": "#fff"
+        }
+      }
+    }
+  }
