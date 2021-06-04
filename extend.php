@@ -26,7 +26,7 @@ return [
 
             <style>
                 .verifiedBadgeParent {
-                    background-color: transparent;
+                    background-color: transparent !important;
                 }
                 .badges {
                     list-style-image: initial;
