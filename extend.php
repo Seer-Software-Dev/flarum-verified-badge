@@ -43,7 +43,6 @@ return [
                     height: 100%;
                     width: auto;
                     background-repeat: no-repeat;
-                    background-color: rgba(0,0,255,0.5);
                 }
             </style>';
         })
