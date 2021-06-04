@@ -11,7 +11,7 @@ return [
             $document->head[] = '
             <script>
                 window.addEventListener("load", function(){
-                    const vBadges = document.querySelector(".verifiedBadge");
+                    const vBadges = document.getElementsByClassName("verifiedBadge");
 
                     console.log(vBadges, vBadges.length)
                     if(vBadges.length > 0){
