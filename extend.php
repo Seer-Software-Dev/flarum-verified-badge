@@ -13,11 +13,9 @@ return [
                 window.addEventListener("load", function(){
                     const vBadges = document.getElementsByClassName("verifiedBadge");
 
-                    console.log(vBadges, vBadges.length)
                     if(vBadges.length > 0){
                         for(const b of vBadges){
                             const parentBadge = b.parentElement;
-                            console.log(parentBadge)
                             parentBadge.classList.add("verifiedBadgeParent");
                         }
                     }
