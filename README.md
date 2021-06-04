@@ -1,0 +1,2 @@
+# Flarum Verified Badge
+
