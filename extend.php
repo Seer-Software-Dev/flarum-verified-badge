@@ -9,11 +9,22 @@ return [
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
             $document->head[] = '
+            <script>
+                (() => {
+                    const vBadges = document.querySelector(".verifiedBadge");
+
+                    if(vBadges.length > 0){
+                        for(const b of vBadges){
+                            const parentBadge = b.parentElement;
+                            parentBadge.classList.add("verifiedBadgeParent");
+                        }
+                    }
+                })()
+            </script>
+
             <style>
-                .Badge {
+                .verifiedBadgeParent {
                     background-color: transparent;
-                    width: 27px;
-                    height: 27px;
                 }
                 .badges {
                     list-style-image: initial;
@@ -28,8 +39,10 @@ return [
                     background-color: initial;
                     background-size: 100% auto;
                     display: block;
-                    height: 25px;
+                    height: 100%;
                     width: auto;
+                    background-repeat: no-repeat;
+                    background-color: rgba(0,0,255,0.5);
                 }
             </style>';
         })
