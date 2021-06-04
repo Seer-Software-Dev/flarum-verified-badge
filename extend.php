@@ -10,16 +10,17 @@ return [
         ->content(function (Document $document) {
             $document->head[] = '
             <script>
-                (() => {
+                document.onload = () => {
                     const vBadges = document.querySelector(".verifiedBadge");
 
+                    console.log(vBadges)
                     if(vBadges.length > 0){
                         for(const b of vBadges){
                             const parentBadge = b.parentElement;
                             parentBadge.classList.add("verifiedBadgeParent");
                         }
                     }
-                })()
+                })
             </script>
 
             <style>
