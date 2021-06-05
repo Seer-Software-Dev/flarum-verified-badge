@@ -5,7 +5,7 @@ How to add this to your forum:
 - Make a new role `Admin > Permissions`
 - You can customize the name and plural
 - Put the color as: `transparent` (To have no background)!
-- Put icon as: `verifiedBadge` **Case sensitive!**
+- Put icon as: `verifiedBadge`/`verifiedBadgeBlue` **Case sensitive!**
 
 > **Disclaimer:** you will not see a preview of the badge
 
